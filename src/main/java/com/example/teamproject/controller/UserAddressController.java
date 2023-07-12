@@ -1,8 +1,6 @@
 package com.example.teamproject.controller;
-//azizbekusmonov
-import com.example.teamproject.dto.KorzinkaUsersDTO;
+//azizbek
 import com.example.teamproject.dto.UsersUserAddressDTO;
-import com.example.teamproject.entity.Address;
 import com.example.teamproject.entity.UserAddress;
 import com.example.teamproject.entity.Users;
 import com.example.teamproject.repository.UserAddressRepository;
@@ -50,7 +48,7 @@ public class UserAddressController {
     }
 
     @DeleteMapping(value = "/address/{id}")
-    public String deleteUserAddress(@RequestBody UserAddress userAddress, @PathVariable Integer id){
+    public String deleteUserAddress( @PathVariable Integer id){
         userAddressRepository.deleteById(id);
         return "Delete UserAddress";
     }
