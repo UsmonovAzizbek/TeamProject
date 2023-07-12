@@ -37,7 +37,7 @@ public class UserAddressController {
             return "Not Add UserAddress";
         }
     }
-//azizbek
+//azizbek usmonov
     @GetMapping(value = "/address")
     public List<UserAddress> getAllUserAddress(){
         return userAddressRepository.findAll();
