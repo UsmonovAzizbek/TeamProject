@@ -37,11 +37,7 @@ public class UserAddressController {
             return "Not Add UserAddress";
         }
     }
-    @GetMapping(value = "/addresda")
-    public String getted(){
-        return "AGREF";
-    }
-
+//azizbek
     @GetMapping(value = "/address")
     public List<UserAddress> getAllUserAddress(){
         return userAddressRepository.findAll();
