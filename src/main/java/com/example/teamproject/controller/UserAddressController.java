@@ -37,7 +37,7 @@ public class UserAddressController {
             return "Not Add UserAddress";
         }
     }
-//azizbek usmonov
+
     @GetMapping(value = "/address")
     public List<UserAddress> getAllUserAddress(){
         return userAddressRepository.findAll();
@@ -48,7 +48,7 @@ public class UserAddressController {
         List<UserAddress> allByUsersId = userAddressRepository.findAllByUsersId(users_id);
         return allByUsersId;
     }
-
+//11111
     @DeleteMapping(value = "/address/{id}")
     public String deleteUserAddress(@RequestBody UserAddress userAddress, @PathVariable Integer id){
         userAddressRepository.deleteById(id);
