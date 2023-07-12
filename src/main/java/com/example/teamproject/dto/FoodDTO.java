@@ -1,5 +1,5 @@
 package com.example.teamproject.dto;
-//azizbek
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -42,7 +42,7 @@ public class UserAddressController {
     }
 
     @GetMapping(value = "/address/{users_id}")
-    public List<UserAddress> getUserAddress(@PathVariable Integer users_id){
+    public List<UserAddress> getUserAddress(@RequestBody UserAddress userAddress, @PathVariable Integer users_id){
         List<UserAddress> allByUsersId = userAddressRepository.findAllByUsersId(users_id);
         return allByUsersId;
     }
@@ -66,3 +66,4 @@ public class UserAddressController {
         return "Edit UserAddress";
     }
 }
+//azizbek
